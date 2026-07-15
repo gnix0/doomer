@@ -24,9 +24,6 @@ void sv_chop_right(String_View *sv, size_t n)
     if (n > sv->len)
         n = sv->len;
 
-    if (sv->len == 0)
-        return;
-
     sv->len -= n;
 }
 
