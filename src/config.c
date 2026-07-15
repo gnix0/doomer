@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "string_view.h"
 
 typedef struct {
   double min_scale;
@@ -15,8 +16,7 @@ const Config defaultConfig = {
   .scale_friction = 4.0,
 };
 
-Config loadConfig(const char *filePath)
-{
+Config loadConfig(const char *filePath) {
   Config config = defaultConfig;
   
   FILE *file = fopen(filePath, "r");
@@ -34,3 +34,13 @@ Config loadConfig(const char *filePath)
   return config;
 
 }
+
+/*
+int main(void) {
+  // Just to test each function when first I add them.
+  String_View s = sv("    Hello, World   ");
+  sv_trim(&s);
+  printf("%.*s\n", s.len, s.data);
+  return 0;
+}
+*/
