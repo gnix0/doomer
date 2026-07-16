@@ -7,7 +7,7 @@
 
 String_View sv(const char *cstr)
 {
-    return (String_View){
+    return (String_View) {
         .data = cstr,
         .len = strlen(cstr),
     };
