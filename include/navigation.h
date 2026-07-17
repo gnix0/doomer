@@ -1,8 +1,8 @@
 #ifndef NAVIGATION_H
 #define NAVIGATION_H
-#import "config.h"
-#import "la.h"
-#import <stdbool.h>
+#include "config.h"
+#include "la.h"
+#include <stdbool.h>
 
 #define VELOCITY_THRESHOLD 15.0
 
